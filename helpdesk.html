@@ -12,11 +12,13 @@
 <body>
     <a href="http://www.swin.edu.au"><img alt="Swinburne Logo" src="images/logo.png"></a>
     <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
-        <h1>CWA Help Desk Appointment</h1>
-        <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
-        <p>Check Blackboard for when CWA tutors will be there.</p>
+        <header>
+            <h1>CWA Help Desk Appointment</h1>
+            <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday.</p>
+            <p>Check Blackboard for when CWA tutors will be there.</p>
+        </header>
         <fieldset>
-            <legend>Student details</legend>
+            <legend>Student Details</legend>
             <p>
                 <label for="studentid">Student ID</label>
                 <input type="text" name="studentid" id="studentid" minlength="7" maxlength="10" pattern="\d{7,10}" required>
@@ -30,18 +32,18 @@
         </fieldset>
 
         <fieldset>
-            <legend>Your unit</legend>
+            <legend>Your Unit</legend>
             <p>
-                <label for="COS10011">COS10011</label> 
                 <input type="radio" id="COS10011" name="unit" value="COS10011" required>
-                <label for="COS60004">COS60004</label> 
+                <label for="COS10011">COS10011</label> 
                 <input type="radio" id="COS60004" name="unit" value="COS60004">
-                <label for="COS60007">COS60007</label> 
+                <label for="COS60004">COS60004</label> 
                 <input type="radio" id="COS60007" name="unit" value="COS60007">
+                <label for="COS60007">COS60007</label> 
             </p>
 
             <p>
-                <label for="tutor">Your tutor</label> 
+                <label for="tutor">Your Tutor</label> 
                 <select name="tutor" id="tutor" required>
                     <option value="">Please Select</option>
                     <option value="gooby">Gooby Masterhead</option>
